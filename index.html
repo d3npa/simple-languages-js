@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang=en>
+    <head>
+        <title>simple-lang demo</title>
+        <meta charset="utf-8">
+        <script type="text/javascript" src="./simple-lang.js"></script>
+    </head>
+    <body>
+        <div>
+            <!-- Example Message -->
+            <t en>The raven flew away.</t>
+            <t fr>La corneille s'est envolée.</t>
+            <t is>Hrafninn flaug í burtu.</t>
+            <t ja>渡り鴉は飛んで行っちゃった。</t>
+            <t ainu>パㇱクㇽ ホプニ ワ アㇻパ。</t>
+        </div>
+        <div>
+            <!-- Language Switcher -->
+            <select id="language-selector" onchange="setLanguage(this.value);">
+                <option value="en">English</option>
+                <option value="fr">Français</option>
+                <option value="is">Íslenska</option>
+                <option value="ja">日本語</option>
+                <option value="ainu">アィヌ イタㇰ</option>
+            </select>
+        </div>
+    </body>
+</html>
