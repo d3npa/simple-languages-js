@@ -43,19 +43,21 @@ Programming languages
 ```html
 Hello world program in
 <t python>Python:
-<pre>
+    <pre>
 print("Hello world")
-</pre>
+    </pre>
 </t>
-<t c>C:
-<pre>
+<t c>C: <br>
+    <pre>
 #import <stdio.h>
 
 void main() {
     printf("Hello, world!");
 }
-</pre>
-<t nasm64>
+    </pre>
+</t>
+<t nasm64>NASM (elf64): <br>
+    <pre>
 BITS 64
 SECTION .DATA
     greeting:       db "Hello, world!", 0x0A
@@ -74,6 +76,7 @@ _start:
     mov rax, 0x3c
     xor rdi, rdi
     syscall
+    </pre>
 </t>
 ```
 
