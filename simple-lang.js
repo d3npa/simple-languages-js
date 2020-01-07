@@ -9,5 +9,5 @@ window.onload = function() {
 
 function setLanguage(language) {
     var languageStyle = document.querySelector("#language-style");
-    languageStyle.innerHTML = "t { display: none; } t[" + language + "] { display: inline-block !important; }";
+    languageStyle.innerHTML = "t { display: none; } t[" + language + "] { display: initial; }";
 }
