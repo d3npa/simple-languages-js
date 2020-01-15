@@ -1,7 +1,7 @@
 /*
     MIT License
 
-    Copyright (c) 2020 でんぱ
+    Copyright (c) 2020 でんぱ https://github.com/d3npa/simple-languages-js
 
     Permission is hereby granted, free of charge, to any person obtaining a copy
     of this software and associated documentation files (the "Software"), to deal
@@ -36,9 +36,4 @@ function setLanguage(language) {
     languageStyle.innerHTML = "t { display: none; } t[" + language + "] { display: initial; }";
 }
 
-// Source: https://stackoverflow.com/a/4722710
-if (window.addEventListener) {
-    window.addEventListener("load", initLanguage, false);
-} else if (window.attachEvent) {
-    window.attachEvent("onload", initLanguage);
-}
+initLanguage();
